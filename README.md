@@ -14,7 +14,7 @@ kubectl exec -it pod/jmxterm-debug /bin/bash
 
 Inside the pod, you can run the following command to connect to a JMX server:
 ```bash
-jmxterm service:jmx:rmi:///jndi/rmi://<JMX_SERVER_IP>:<JMX_SERVER_PORT>/jmxrmi
+jmxterm -l service:jmx:rmi:///jndi/rmi://<JMX_SERVER_IP>:<JMX_SERVER_PORT>/jmxrmi -n
 ```
 
 
