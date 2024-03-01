@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jmxterm-debug
+spec:
+  containers:
+  - name: jmxterm-container
+    image: ghcr.io/p404/jmxterm-docker:latest
+    command: ["/bin/sh"]
+    args: ["-c", "sleep infinity"]
